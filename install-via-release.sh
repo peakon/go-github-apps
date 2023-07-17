@@ -56,7 +56,7 @@ if [ -z "${VERSION}" ]; then
   exit 1
 fi
 
-BASE_URL="https://github.com/nabeken/go-github-apps/releases/download/${VERSION}"
+BASE_URL="https://github.com/peakon/go-github-apps/releases/download/${VERSION}"
 URL="${BASE_URL}/go-github-apps_${VERSION#v}_$(get_os)_$(get_arch).tar.gz"
 
 shift $((OPTIND - 1))

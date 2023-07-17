@@ -1,7 +1,7 @@
 # go-github-apps
 
-[![Go](https://github.com/nabeken/go-github-apps/actions/workflows/go.yml/badge.svg)](https://github.com/nabeken/go-github-apps/actions/workflows/go.yml)
-[![Test Action](https://github.com/nabeken/go-github-apps/actions/workflows/test-action.yml/badge.svg)](https://github.com/nabeken/go-github-apps/actions/workflows/test-action.yml)
+[![Go](https://github.com/peakon/go-github-apps/actions/workflows/go.yml/badge.svg)](https://github.com/peakon/go-github-apps/actions/workflows/go.yml)
+[![Test Action](https://github.com/peakon/go-github-apps/actions/workflows/test-action.yml/badge.svg)](https://github.com/peakon/go-github-apps/actions/workflows/test-action.yml)
 
 `go-github-apps` is a command-line tool to retrieve a Github Apps Installation Token.
 
@@ -64,7 +64,7 @@ If you install the app for multiple organizations and/or users, you may see mult
 
 ## Installation
 
-https://github.com/nabeken/go-github-apps/releases
+https://github.com/peakon/go-github-apps/releases
 
 ## Installation for continuous integration
 
@@ -72,7 +72,7 @@ https://github.com/nabeken/go-github-apps/releases
 
 **Example**:
 ```sh
-curl -sSLf https://raw.githubusercontent.com/nabeken/go-github-apps/master/install-via-release.sh | bash -s -- -v v0.0.3
+curl -sSLf https://raw.githubusercontent.com/peakon/go-github-apps/master/install-via-release.sh | bash -s -- -v v0.0.3
 sudo cp go-github-apps /usr/local/bin
 ```
 
@@ -83,7 +83,7 @@ You can automate issuing a token with Github Actions.
 Example:
 ```yml
 - name: Get GITHUB_TOKEN for Github Apps
-  uses: nabeken/go-github-apps@v0
+  uses: peakon/go-github-apps@v0
   id: go-github-apps
   with:
     installation_id: ${{ secrets.installation_id }}

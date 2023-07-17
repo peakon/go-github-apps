@@ -21,7 +21,7 @@ runs:
   using: "composite"
   steps:
     - run: |
-        curl -sSLf https://raw.githubusercontent.com/nabeken/go-github-apps/master/install-via-release.sh | bash -s -- -v v${{ inputs.version }}
+        curl -sSLf https://raw.githubusercontent.com/peakon/go-github-apps/master/install-via-release.sh | bash -s -- -v v${{ inputs.version }}
         sudo cp go-github-apps /usr/local/bin
       shell: bash
     - id: go-github-apps

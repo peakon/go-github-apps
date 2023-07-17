@@ -1,4 +1,4 @@
-module github.com/nabeken/go-github-apps
+module github.com/peakon/go-github-apps
 
 go 1.14
 
